@@ -61,3 +61,13 @@ python main.py
 - [ ] v0.2 工作流模板市场
 - [ ] v0.3 多模型支持 (SDXL / Flux)
 - [ ] v1.0 Web UI
+
+
+---
+
+## 内置工作流示例 (workflows/)
+
+- workflows/ltx-2.3-turbo-stable.json - LTX 2.3 Turbo Stable 4V4A
+- workflows/minimax-h3-turbo.json - MiniMax H3 Turbo 4-step
+
+完整 JSON 从 GitHub 下载 (GFW 风险): https://github.com/T8mars/comfyui-minimax-h3-audio-T8

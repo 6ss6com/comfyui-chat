@@ -1,0 +1,29 @@
+{
+  "name": "LTX-2.3-Turbo-Stable-4V4A",
+  "description": "LTX 2.3 Turbo Stable + 4-step accel + audio sync",
+  "source": "https://github.com/T8mars/comfyui-minimax-h3-audio-T8",
+  "note": "placeholder - full JSON from GitHub",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "PinkCherry_FineTune_Q5_K_M_v18_LTX23.gguf"
+      }
+    },
+    {
+      "id": "2",
+      "type": "LoraLoader",
+      "inputs": {
+        "lora_name": "ltx-2.3-22b-distilled-lora-384-1.1.safetensors"
+      }
+    },
+    {
+      "id": "5",
+      "type": "KSampler",
+      "inputs": {
+        "steps": 4
+      }
+    }
+  ]
+}

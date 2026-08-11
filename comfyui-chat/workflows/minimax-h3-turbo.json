@@ -1,0 +1,29 @@
+{
+  "name": "MiniMax-H3-Turbo",
+  "description": "MiniMax H3 Turbo 4-step acceleration",
+  "source": "https://github.com/T8mars/comfyui-minimax-h3-audio-T8",
+  "note": "placeholder - full JSON from GitHub",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "MiniMax-H3"
+      }
+    },
+    {
+      "id": "2",
+      "type": "LoraLoader",
+      "inputs": {
+        "lora_name": "h3-4step-turbo-lora.safetensors"
+      }
+    },
+    {
+      "id": "5",
+      "type": "KSampler",
+      "inputs": {
+        "steps": 4
+      }
+    }
+  ]
+}
